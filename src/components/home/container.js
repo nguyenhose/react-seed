@@ -1,5 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
 
 
 class Home extends React.Component {
@@ -7,8 +9,11 @@ class Home extends React.Component {
     return (<div>Hello React</div>)
   }
 }
-const mapStateToProps = () => {
-  return {}
+const mapStateToProps = (state) => {
+  console.log('state', state);
+  return {
+
+  }
 }
 const mapDispatchToProps = () => {
   return  {}

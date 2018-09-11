@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { homeReducer } from './homeReducer'
+import { homeReducer } from './components/home/reducer'
 export default combineReducers({
-  homeReducer
+  home: homeReducer
 })
