@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as homeActionCreator from './actionCreator'
-
+import './style.css'
 
 
 class Home extends React.Component {
@@ -11,7 +11,7 @@ class Home extends React.Component {
     this.props.getExampleFetch()
   }
   render() {
-    return (<div>Hello React</div>)
+    return (<div className="container">Hello React</div>)
   }
 }
 const mapStateToProps = (state) => {
