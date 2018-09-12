@@ -7,6 +7,6 @@ Simple structure of a react project following latest version packages:
 - Redux
 - Redux-thunk
 
-#To start project and develope: `npm run start`
+#To start project and develop: `npm run start`
 
 #To build with project with production mode: `npm run build`
