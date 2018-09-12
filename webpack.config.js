@@ -6,6 +6,10 @@ const htmlPlugin = new HtmlWebpackPlugin({
 })
 
 module.exports = {
+  output: {
+    filename: 'main.js',
+    publicPath: '/'
+  },
   module: {
     rules: [{
       test: /\.js$/,
@@ -19,5 +23,8 @@ module.exports = {
       use: ["style-loader", "css-loader"]
     }
   ]},
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [htmlPlugin]
 }
