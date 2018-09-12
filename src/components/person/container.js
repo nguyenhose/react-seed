@@ -19,7 +19,7 @@ class Person extends React.Component {
       <div className="home-container">
         <div className="header">
           <div className="back">
-            <Link to={'/'}>
+            <Link to={'/'} style={{color: 'white'}}>
               <i className="fas fa-chevron-left"></i>
             </Link>
           </div>

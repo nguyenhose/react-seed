@@ -16,7 +16,7 @@ class Home extends React.Component {
             return (
               <span className='home-button' key={i}>
                 <button type="button" className="btn btn-primary">
-                  <a className="badge badge-primary" href={`/person/${i}`}>{i}</a>
+                  <Link className="badge badge-primary" to={`/person/${i}`}>{i}</Link>
                 </button>
               </span>
               )
