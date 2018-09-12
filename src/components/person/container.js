@@ -20,13 +20,13 @@ class Person extends React.Component {
         <div className="header">
           <div className="back">
             <Link to={'/'} style={{color: 'white'}}>
-              <i className="fas fa-chevron-left"></i>
+              <i className="fas fa-chevron-left"></i> <span style={{fontSize: 12}}>Back</span>
             </Link>
           </div>
           Person
         </div>
         <ul className="list-group">
-          <li className="list-group-item">
+          <li className="list-group-item-me">
             <div className="avatar">
               <img src={`${profile.avatar_url}`} alt=""/>
             </div>
@@ -34,7 +34,6 @@ class Person extends React.Component {
               {profile.name}
               <div className="person-location">{profile.location}</div>
             </div>
-
           </li>
         </ul>
       </div>
