@@ -2,7 +2,7 @@
 
 Scalable react redux project seed
 
- React project following latest version packages:
+ Following latest version packages:
 - Webpack 4.0
 - React-redux 
 - React-router-dom
