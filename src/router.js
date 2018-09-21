@@ -7,8 +7,8 @@ import Person from './components/person/container'
 const router = (
   <BrowserRouter>
     <Switch>
-      <Route exact component={requireAuth(Home)} path={'/'} />
-      <Route component={requireAuth(Person)} path={'/person/:username'} />
+      <Route exact render={(props) => <Home {...props} />} path={'/'} />
+      <Route render={(props) => <Person {...props} />} path={'/person/:username'} />
     </Switch>
   </BrowserRouter>
 )

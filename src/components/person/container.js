@@ -7,19 +7,13 @@ import { Link } from 'react-router-dom'
 
 
 class Person extends React.Component {
-
-  componentDidMount() {
-    const { pathname } = location
-    const username = pathname.split('/')[2]
-    this.props.getPersoneDetail(username)
-  }
   render() {
     const { profile = {} } =  this.props
     return (
       <div className="home-container">
         <div className="header">
           <div className="back">
-            <Link to={'/'} style={{color: 'white'}}>
+            <Link to={'/'} style={{color: 'white'}} state: { transition: 'slideDown' }}>
               <i className="fas fa-chevron-left"></i> <span style={{fontSize: 12}}>Back</span>
             </Link>
           </div>

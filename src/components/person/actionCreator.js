@@ -1,8 +1,12 @@
 
 export const getPersoneDetail = (name) => (dispatch, getState) => {
-  fetch(`https://api.github.com/users/${name}`).then((res) => res.json()).then((res) => {
-    dispatch({type: 'GET_PROFILE', payload: res})
-  }).catch((err) => {
-    console.error(err);
-  })
+  return new Promise(function(resolve, reject) {
+    fetch(`https://api.github.com/users/${name}`).then((res) => res.json()).then((res) => {
+      dispatch({type: 'GET_PROFILE', payload: res})
+      resolve(true)
+    }).catch((err) => {
+      console.error(err);
+      reject(false)
+    })
+  });
 }
